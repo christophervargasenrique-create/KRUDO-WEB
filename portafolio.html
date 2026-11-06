@@ -1,136 +1,394 @@
+html
 <!DOCTYPE html>
-<html lang="es"><head>
-<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="es">
+<head>
+<!-- Configuración básica del documento y adaptación a dispositivos móviles -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Título que aparece en la pestaña del navegador -->
 <title>Portafolio 2026 · KRUDO — Steven Vargas</title>
-<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+<!-- Conexión a Google Fonts para cargar la tipografía Poppins -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+<!-- Archivo CSS externo que controla los estilos visuales de la página -->
 <link rel="stylesheet" href="styles.css" />
-</head><body>
+</head>
+
+<body>
+
+<!-- Barra superior que indica el progreso de desplazamiento de la página -->
 <div class="progress" id="progress" aria-hidden="true"></div>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="mk" viewBox="0 0 100 110">
-<rect x="22" y="0" width="14" height="22" style="fill:var(--b)"/><rect x="64" y="0" width="14" height="22" style="fill:var(--b)"/>
-<rect x="2" y="14" width="96" height="94" rx="20" style="fill:var(--b)"/><rect x="26" y="34" width="38" height="38" style="fill:var(--e)"/>
-<rect x="38" y="46" width="14" height="14" style="fill:var(--p)"/><polyline points="16,92 31,78 45,94 59,78 73,94 86,82" fill="none" style="stroke:var(--e)" stroke-width="7"/></symbol></svg>
-<div class="ticker" aria-hidden="true"><div class="ticker__track"><span>PORTAFOLIO 2026 // DISEÑO GRÁFICO // LIMA - PERÚ // KRUDO // </span><span>PORTAFOLIO 2026 // DISEÑO GRÁFICO // LIMA - PERÚ // KRUDO // </span><span>PORTAFOLIO 2026 // DISEÑO GRÁFICO // LIMA - PERÚ // KRUDO // </span><span>PORTAFOLIO 2026 // DISEÑO GRÁFICO // LIMA - PERÚ // KRUDO // </span></div></div>
-<header class="nav"><a href="index.html" class="nav__logo"><span>KRUDO</span></a>
-<nav class="nav__links"><a href="#sobre-mi">Sobre mí</a><a href="#logo">Logo</a><a href="#marca">Marca</a><a href="#trabajos">Trabajos</a><a href="index.html" class="btn btn--sm">← Volver</a></nav></header>
+
+<!-- Símbolo SVG reutilizable de la mascota KRUDO -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="mk" viewBox="0 0 100 110">
+<rect x="22" y="0" width="14" height="22" style="fill:var(--b)"/>
+<rect x="64" y="0" width="14" height="22" style="fill:var(--b)"/>
+<rect x="2" y="14" width="96" height="94" rx="20" style="fill:var(--b)"/>
+<rect x="26" y="34" width="38" height="38" style="fill:var(--e)"/>
+<rect x="38" y="46" width="14" height="14" style="fill:var(--p)"/>
+<polyline points="16,92 31,78 45,94 59,78 73,94 86,82" fill="none" style="stroke:var(--e)" stroke-width="7"/>
+</symbol>
+</svg>
+
+<!-- Cinta animada superior con información del portafolio -->
+<div class="ticker" aria-hidden="true">
+<div class="ticker__track">
+<span>PORTAFOLIO 2026 // DISEÑO GRÁFICO // LIMA - PERÚ // KRUDO // </span>
+<span>PORTAFOLIO 2026 // DISEÑO GRÁFICO // LIMA - PERÚ // KRUDO // </span>
+<span>PORTAFOLIO 2026 // DISEÑO GRÁFICO // LIMA - PERÚ // KRUDO // </span>
+<span>PORTAFOLIO 2026 // DISEÑO GRÁFICO // LIMA - PERÚ // KRUDO // </span>
+</div>
+</div>
+
+<!-- Encabezado principal con el logotipo y los enlaces de navegación -->
+<header class="nav">
+<a href="index.html" class="nav__logo"><span>KRUDO</span></a>
+<nav class="nav__links">
+<a href="#sobre-mi">Sobre mí</a>
+<a href="#logo">Logo</a>
+<a href="#marca">Marca</a>
+<a href="#trabajos">Trabajos</a>
+<a href="index.html" class="btn btn--sm">← Volver</a>
+</nav>
+</header>
+
 <main>
-<section class="pf-cover section--red"><div class="wrap">
-  <div class="reveal"><div class="pf-cover__kr">KR<br/>UD</div>
-    <div class="pf-stage"><i class="pf-px"></i><i class="pf-px"></i><i class="pf-px"></i><i class="pf-px"></i>
-      <svg id="mascot" viewBox="0 0 100 110" aria-label="Mascota KRUDO"><rect x="22" y="0" width="14" height="22" fill="#0B0A0A"/><rect x="64" y="0" width="14" height="22" fill="#0B0A0A"/><rect x="2" y="14" width="96" height="94" rx="20" fill="#0B0A0A"/>
-      <rect class="eye" x="26" y="34" width="38" height="38" fill="#fff"/><rect id="pupil" x="38" y="46" width="14" height="14" fill="#0B0A0A"/>
-      <polyline class="mouth" points="16,92 31,78 45,94 59,78 73,94 86,82" fill="none" stroke="#fff" stroke-width="7"/></svg></div></div>
-  <div><h1>Portafolio <span>2026</span></h1><p class="reveal">STEVEN VARGAS · DISEÑADOR GRÁFICO · LIMA, PERÚ</p><p class="reveal" style="font-weight:500;letter-spacing:0">Haz clic en la mascota. Mueve el cursor: te mira.</p></div>
-</div></section>
 
-<section id="sobre-mi" class="section section--dark"><div class="wrap about">
-  <div class="about__photo reveal"><img src="imagenes/steven.jpg" alt="Steven Vargas" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="project__ph">imagenes/steven.jpg</span></div>
-  <div><h2 class="pf-title">¡Hola! Me llamo <span class="rojo-l">Steven Vargas</span></h2>
-  <p class="lead reveal">Soy diseñador gráfico y estudiante de Arte &amp; Diseño Gráfico Empresarial. Transformo ideas en identidad visual, logotipos y contenido para redes, buscando comunicar con creatividad y adaptarme a cada reto.</p>
-  <div class="pf-grid">
-    <div class="pf-card reveal"><h3>EXPERIENCIA</h3><p><b>2024</b> · Expuesto en SEV Los Olivos: conferencia de diseño y creatividad.</p><p><b>2024</b> · Diseñador freelance en Lima.</p></div>
-    <div class="pf-card reveal"><h3>CURSOS</h3><p><b>2024</b> · Taller de Xilografía, Museo de los Descalzos, Rímac.</p><p><b>Hoy</b> · Arte &amp; Diseño Gráfico, Universidad César Vallejo.</p></div>
-  </div>
-  <div class="skills reveal" style="margin-top:28px"><div class="skill"><span>Photoshop</span><i style="--v:85%"></i></div><div class="skill"><span>Illustrator</span><i style="--v:80%"></i></div><div class="skill"><span>InDesign</span><i style="--v:60%"></i></div><div class="skill"><span>Premiere Pro</span><i style="--v:50%"></i></div></div>
-  <div class="pf-stats"><div class="reveal"><b data-count="6">0</b>proyectos</div><div class="reveal"><b data-count="7">0</b>colores de marca</div><div class="reveal"><b data-count="6">0</b>versiones del logo</div></div>
-  </div></div></section>
+<!-- PORTADA DEL PORTAFOLIO: presenta el nombre, año y mascota de KRUDO -->
+<section class="pf-cover section--red">
+<div class="wrap">
+<div class="reveal">
+<div class="pf-cover__kr">KR<br/>UD</div>
 
-<section id="logo" class="section section--bone"><div class="wrap">
-  <h2 class="pf-title">Logo <span class="rojo-d">personal</span></h2>
-  <p class="lead lead--dark reveal">Versión a color, blanco y negro, y una tinta. Pasa el cursor sobre cada una.</p>
-  <div class="logos reveal"><div class="logo" style="--bg:#F4F1EA;--fg:#0B0A0A;--mb:#D91F26;--me:#fff;--mp:#0B0A0A" role="img" aria-label="Logo KRUDO">KRUD<svg viewBox="0 0 100 110"><use href="#mk"/></svg></div><div class="logo" style="--bg:#0B0A0A;--fg:#F4F1EA;--mb:#D91F26;--me:#fff;--mp:#0B0A0A" role="img" aria-label="Logo KRUDO">KRUD<svg viewBox="0 0 100 110"><use href="#mk"/></svg></div><div class="logo" style="--bg:#fff;--fg:#0B0A0A;--mb:#0B0A0A;--me:#fff;--mp:#0B0A0A" role="img" aria-label="Logo KRUDO">KRUD<svg viewBox="0 0 100 110"><use href="#mk"/></svg></div><div class="logo" style="--bg:#0B0A0A;--fg:#fff;--mb:#fff;--me:#0B0A0A;--mp:#fff" role="img" aria-label="Logo KRUDO">KRUD<svg viewBox="0 0 100 110"><use href="#mk"/></svg></div><div class="logo" style="--bg:#F4F1EA;--fg:#D91F26;--mb:#D91F26;--me:#F4F1EA;--mp:#D91F26" role="img" aria-label="Logo KRUDO">KRUD<svg viewBox="0 0 100 110"><use href="#mk"/></svg></div><div class="logo" style="--bg:#D91F26;--fg:#fff;--mb:#fff;--me:#D91F26;--mp:#fff" role="img" aria-label="Logo KRUDO">KRUD<svg viewBox="0 0 100 110"><use href="#mk"/></svg></div></div>
-</div></section>
+<!-- Escenario decorativo donde aparece la mascota interactiva -->
+<div class="pf-stage">
+<i class="pf-px"></i><i class="pf-px"></i><i class="pf-px"></i><i class="pf-px"></i>
+<svg id="mascot" viewBox="0 0 100 110" aria-label="Mascota KRUDO">
+<rect x="22" y="0" width="14" height="22" fill="#0B0A0A"/>
+<rect x="64" y="0" width="14" height="22" fill="#0B0A0A"/>
+<rect x="2" y="14" width="96" height="94" rx="20" fill="#0B0A0A"/>
+<rect class="eye" x="26" y="34" width="38" height="38" fill="#fff"/>
+<rect id="pupil" x="38" y="46" width="14" height="14" fill="#0B0A0A"/>
+<polyline class="mouth" points="16,92 31,78 45,94 59,78 73,94 86,82" fill="none" stroke="#fff" stroke-width="7"/>
+</svg>
+</div>
+</div>
 
-<section id="marca" class="section section--dark"><div class="wrap">
-  <h2 class="pf-title">Paleta de <span class="rojo-l">color</span></h2>
-  <div class="swatches"><div class="swatch reveal" style="--c:#D91F26;--t:#fff" data-hex="#D91F26" title="Clic para copiar"><b>Rojo Krudo</b><span>#D91F26</span></div><div class="swatch reveal" style="--c:#0B0A0A;--t:#fff" data-hex="#0B0A0A" title="Clic para copiar"><b>Negro Concreto</b><span>#0B0A0A</span></div><div class="swatch reveal" style="--c:#F4F1EA;--t:#0B0A0A" data-hex="#F4F1EA" title="Clic para copiar"><b>Blanco Hueso</b><span>#F4F1EA</span></div><div class="swatch reveal" style="--c:#55544F;--t:#fff" data-hex="#55544F" title="Clic para copiar"><b>Gris Concreto</b><span>#55544F</span></div><div class="swatch reveal" style="--c:#B4B3AC;--t:#0B0A0A" data-hex="#B4B3AC" title="Clic para copiar"><b>Gris Claro</b><span>#B4B3AC</span></div><div class="swatch reveal" style="--c:#FF5A5F;--t:#0B0A0A" data-hex="#FF5A5F" title="Clic para copiar"><b>Rojo Claro</b><span>#FF5A5F</span></div><div class="swatch reveal" style="--c:#B3141B;--t:#fff" data-hex="#B3141B" title="Clic para copiar"><b>Rojo Oscuro</b><span>#B3141B</span></div></div><p class="lead reveal" style="margin-top:16px;font-size:14px" id="copied">Haz clic en un color para copiar su código.</p>
-  <h2 class="pf-title" style="margin-top:72px">Sistema de <span class="rojo-l">marca</span></h2>
-  <div class="pf-grid">
-    <div class="pf-card reveal"><h3>TIPOGRAFÍA</h3><p style="font-size:72px;font-weight:900;color:#fff;line-height:1">Aa</p><p><b>Poppins</b> · Medium para etiquetas y datos, Regular para textos largos.</p></div>
-    <div class="pf-card reveal"><h3>MASCOTA Y SÍMBOLO</h3><p><b>01</b> La O es la mascota: un bloque de un solo ojo, como un píxel.</p><p><b>02</b> La segunda fila se corre de lugar: desorden controlado.</p><p><b>03</b> La boca en zigzag es una grieta de concreto y unos dientes.</p></div>
-    <div class="pf-card reveal"><h3>TONO Y ESTILO</h3><p>Crudo y directo, sin adornos innecesarios.</p><p>Alto contraste: rojo, negro y blanco.</p><p>Bloques pesados y formas rectas, como el concreto del brutalismo.</p><p>Guiños de píxel y videojuego en los detalles.</p></div>
-  </div>
-  <div class="moodboard reveal" style="margin-top:56px"><img src="imagenes/tablero_krudo.png" alt="Moodboard KRUDO" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /></div>
-</div></section>
+<!-- Información principal y presentación del diseñador -->
+<div>
+<h1>Portafolio <span>2026</span></h1>
+<p class="reveal">STEVEN VARGAS · DISEÑADOR GRÁFICO · LIMA, PERÚ</p>
+<p class="reveal" style="font-weight:500;letter-spacing:0">Haz clic en la mascota. Mueve el cursor: te mira.</p>
+</div>
+</div>
+</section>
 
-<section id="trabajos" class="section section--red" style="padding:80px 0"><div class="wrap"><h2 class="pf-title" style="color:#fff;margin:0">Mis <span style="color:var(--negro)">trabajos</span></h2></div></section>
+<!-- SOBRE MÍ: presenta información personal, experiencia y habilidades -->
+<section id="sobre-mi" class="section section--dark">
+<div class="wrap about">
 
-    <section class="section section--bone" style="padding:80px 0"><div class="wrap">
-      <article class="project">
-        <div class="project__img"><img src="imagenes/fnf.png" alt="Póster Five Nights at Freddy's" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="project__ph">imagenes/fnf.png</span></div>
-        <div class="project__body">
-          <p class="tag">PROYECTO 01</p><h3>Five Nights at Freddy's</h3>
-          <dl class="meta"><div><dt>CURSO</dt><dd>Teoría del diseño</dd></div><div><dt>HERRAMIENTAS</dt><dd>Photoshop</dd></div><div><dt>TIPO</dt><dd>Póster promocional</dd></div><div><dt>AÑO</dt><dd>2024</dd></div></dl>
-          <p><b>Objetivo y proceso:</b> Diseñar un póster que transmita misterio, esfuerzo y determinación. La escalera representa el recorrido y la figura solitaria el camino que se avanza con perseverancia.</p>
-        </div>
-      </article>
-    </div></section>
-    <section class="section section--dark" style="padding:80px 0"><div class="wrap">
-      <article class="project project--rev">
-        <div class="project__img"><img src="imagenes/melancolia.png" alt="Póster El Último Escalón" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="project__ph">imagenes/melancolia.png</span></div>
-        <div class="project__body">
-          <p class="tag">PROYECTO 02</p><h3>El Último Escalón</h3>
-          <dl class="meta"><div><dt>CURSO</dt><dd>Semiótica visual</dd></div><div><dt>HERRAMIENTAS</dt><dd>Photoshop</dd></div><div><dt>TIPO</dt><dd>Póster / Fotomontaje</dd></div><div><dt>AÑO</dt><dd>2024</dd></div></dl>
-          <p><b>Objetivo y proceso:</b> Mantuve la figura en sombras para dejar que la atmósfera cuente la historia. Aprendí a manejar los contrastes y a confiar en que el menos es más cuando se busca misterio.</p>
-        </div>
-      </article>
-    </div></section>
-    <section class="section section--bone" style="padding:80px 0"><div class="wrap">
-      <article class="project">
-        <div class="project__img"><img src="imagenes/ambar.png" alt="Póster Ambar" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="project__ph">imagenes/ambar.png</span></div>
-        <div class="project__body">
-          <p class="tag">PROYECTO 03</p><h3>Ambar</h3>
-          <dl class="meta"><div><dt>CURSO</dt><dd>Semiótica visual</dd></div><div><dt>HERRAMIENTAS</dt><dd>Photoshop</dd></div><div><dt>TIPO</dt><dd>Póster</dd></div><div><dt>AÑO</dt><dd>2024</dd></div></dl>
-          <p><b>Objetivo y proceso:</b> Tonos cálidos y una luz marcada que divide el rostro, para representar la dualidad entre luz y sombra, con letras elegantes que no opacan la imagen.</p>
-        </div>
-      </article>
-    </div></section>
-    <section class="section section--dark" style="padding:80px 0"><div class="wrap">
-      <article class="project project--rev">
-        <div class="project__img"><img src="imagenes/warframe.png" alt="Póster Warframe" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="project__ph">imagenes/warframe.png</span></div>
-        <div class="project__body">
-          <p class="tag">PROYECTO 04</p><h3>Warframe</h3>
-          <dl class="meta"><div><dt>CURSO</dt><dd>Fuera de clase</dd></div><div><dt>HERRAMIENTAS</dt><dd>Photoshop</dd></div><div><dt>TIPO</dt><dd>Póster</dd></div><div><dt>AÑO</dt><dd>2026</dd></div></dl>
-          <p><b>Objetivo y proceso:</b> Integré al personaje con luces neón y líneas digitales para transmitir ciencia ficción. Aprendí a usar capas y modos de fusión para crear profundidad.</p>
-        </div>
-      </article>
-    </div></section>
-    <section class="section section--bone" style="padding:80px 0"><div class="wrap">
-      <article class="project">
-        <div class="project__img"><img src="imagenes/tinta.png" alt="Póster TINTA" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="project__ph">imagenes/tinta.png</span></div>
-        <div class="project__body">
-          <p class="tag">PROYECTO 05</p><h3>TINTA</h3>
-          <dl class="meta"><div><dt>CURSO</dt><dd>Fuera de clase</dd></div><div><dt>HERRAMIENTAS</dt><dd>Photoshop</dd></div><div><dt>TIPO</dt><dd>Póster</dd></div><div><dt>AÑO</dt><dd>2026</dd></div></dl>
-          <p><b>Objetivo y proceso:</b> Rojo intenso y la palabra TINTA en grande para transmitir fuerza y personalidad. Con pocos elementos bien colocados se logra un mensaje más potente.</p>
-        </div>
-      </article>
-    </div></section>
-    <section class="section section--dark" style="padding:80px 0"><div class="wrap">
-      <article class="project project--rev">
-        <div class="project__img"><img src="imagenes/diseno_brutalista.png" alt="Póster No Adorno" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="project__ph">imagenes/diseno_brutalista.png</span></div>
-        <div class="project__body">
-          <p class="tag">PROYECTO 06</p><h3>No Adorno</h3>
-          <dl class="meta"><div><dt>CURSO</dt><dd>Fuera de clase</dd></div><div><dt>HERRAMIENTAS</dt><dd>Photoshop</dd></div><div><dt>TIPO</dt><dd>Afiche</dd></div><div><dt>AÑO</dt><dd>2026</dd></div></dl>
-          <p><b>Objetivo y proceso:</b> La frase NO ADORNO para resaltar lo esencial, con tipografía firme y colores sobrios. Ordenar y simplificar es la mejor forma de comunicar con claridad.</p>
-        </div>
-      </article>
-    </div></section>
+<!-- Fotografía personal del diseñador -->
+<div class="about__photo reveal">
+<img src="imagenes/steven.jpg" alt="Steven Vargas" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" />
+<span class="project__ph">imagenes/steven.jpg</span>
+</div>
 
-<section class="section section--red cta" id="contacto"><div class="wrap">
-  <h2 class="cta__title reveal">GRACIAS.</h2>
-  <p class="lead lead--light reveal">Lima, Perú · tu-correo@ejemplo.com</p>
-  <div class="hero__cta reveal"><a href="mailto:tu-correo@ejemplo.com" class="btn btn--dark">Escríbeme →</a><a href="index.html" class="btn btn--ghost">← Volver al inicio</a></div>
-</div></section>
+<div>
+<h2 class="pf-title">¡Hola! Me llamo <span class="rojo-l">Steven Vargas</span></h2>
+
+<!-- Breve descripción del perfil profesional -->
+<p class="lead reveal">Soy diseñador gráfico y estudiante de Arte &amp; Diseño Gráfico Empresarial. Transformo ideas en identidad visual, logotipos y contenido para redes, buscando comunicar con creatividad y adaptarme a cada reto.</p>
+
+<!-- Tarjetas que muestran experiencia y formación académica -->
+<div class="pf-grid">
+<div class="pf-card reveal">
+<h3>EXPERIENCIA</h3>
+<p><b>2024</b> · Expuesto en SEV Los Olivos: conferencia de diseño y creatividad.</p>
+<p><b>2024</b> · Diseñador freelance en Lima.</p>
+</div>
+<div class="pf-card reveal">
+<h3>CURSOS</h3>
+<p><b>2024</b> · Taller de Xilografía, Museo de los Descalzos, Rímac.</p>
+<p><b>Hoy</b> · Arte &amp; Diseño Gráfico, Universidad César Vallejo.</p>
+</div>
+</div>
+
+<!-- Indicadores visuales del nivel de manejo de programas de diseño -->
+<div class="skills reveal" style="margin-top:28px">
+<div class="skill"><span>Photoshop</span><i style="--v:85%"></i></div>
+<div class="skill"><span>Illustrator</span><i style="--v:80%"></i></div>
+<div class="skill"><span>InDesign</span><i style="--v:60%"></i></div>
+<div class="skill"><span>Premiere Pro</span><i style="--v:50%"></i></div>
+</div>
+
+<!-- Estadísticas animadas del portafolio -->
+<div class="pf-stats">
+<div class="reveal"><b data-count="6">0</b>proyectos</div>
+<div class="reveal"><b data-count="7">0</b>colores de marca</div>
+<div class="reveal"><b data-count="6">0</b>versiones del logo</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- IDENTIDAD GRÁFICA: muestra diferentes versiones del logotipo KRUDO -->
+<section id="logo" class="section section--bone">
+<div class="wrap">
+<h2 class="pf-title">Logo <span class="rojo-d">personal</span></h2>
+<p class="lead lead--dark reveal">Versión a color, blanco y negro, y una tinta. Pasa el cursor sobre cada una.</p>
+
+<!-- Galería de seis aplicaciones del logotipo con diferentes combinaciones de color -->
+<div class="logos reveal">
+<div class="logo" style="--bg:#F4F1EA;--fg:#0B0A0A;--mb:#D91F26;--me:#fff;--mp:#0B0A0A" role="img" aria-label="Logo KRUDO">KRUD<svg viewBox="0 0 100 110"><use href="#mk"/></svg></div>
+<div class="logo" style="--bg:#0B0A0A;--fg:#F4F1EA;--mb:#D91F26;--me:#fff;--mp:#0B0A0A" role="img" aria-label="Logo KRUDO">KRUD<svg viewBox="0 0 100 110"><use href="#mk"/></svg></div>
+<div class="logo" style="--bg:#fff;--fg:#0B0A0A;--mb:#0B0A0A;--me:#fff;--mp:#0B0A0A" role="img" aria-label="Logo KRUDO">KRUD<svg viewBox="0 0 100 110"><use href="#mk"/></svg></div>
+<div class="logo" style="--bg:#0B0A0A;--fg:#fff;--mb:#fff;--me:#0B0A0A;--mp:#fff" role="img" aria-label="Logo KRUDO">KRUD<svg viewBox="0 0 100 110"><use href="#mk"/></svg></div>
+<div class="logo" style="--bg:#F4F1EA;--fg:#D91F26;--mb:#D91F26;--me:#F4F1EA;--mp:#D91F26" role="img" aria-label="Logo KRUDO">KRUD<svg viewBox="0 0 100 110"><use href="#mk"/></svg></div>
+<div class="logo" style="--bg:#D91F26;--fg:#fff;--mb:#fff;--me:#D91F26;--mp:#fff" role="img" aria-label="Logo KRUDO">KRUD<svg viewBox="0 0 100 110"><use href="#mk"/></svg></div>
+</div>
+</div>
+</section>
+
+<!-- SISTEMA DE MARCA: explica los colores, tipografía y recursos gráficos de KRUDO -->
+<section id="marca" class="section section--dark">
+<div class="wrap">
+
+<h2 class="pf-title">Paleta de <span class="rojo-l">color</span></h2>
+
+<!-- Muestras de color de la identidad visual; cada una permite copiar su código HEX -->
+<div class="swatches">
+<div class="swatch reveal" style="--c:#D91F26;--t:#fff" data-hex="#D91F26" title="Clic para copiar"><b>Rojo Krudo</b><span>#D91F26</span></div>
+<div class="swatch reveal" style="--c:#0B0A0A;--t:#fff" data-hex="#0B0A0A" title="Clic para copiar"><b>Negro Concreto</b><span>#0B0A0A</span></div>
+<div class="swatch reveal" style="--c:#F4F1EA;--t:#0B0A0A" data-hex="#F4F1EA" title="Clic para copiar"><b>Blanco Hueso</b><span>#F4F1EA</span></div>
+<div class="swatch reveal" style="--c:#55544F;--t:#fff" data-hex="#55544F" title="Clic para copiar"><b>Gris Concreto</b><span>#55544F</span></div>
+<div class="swatch reveal" style="--c:#B4B3AC;--t:#0B0A0A" data-hex="#B4B3AC" title="Clic para copiar"><b>Gris Claro</b><span>#B4B3AC</span></div>
+<div class="swatch reveal" style="--c:#FF5A5F;--t:#0B0A0A" data-hex="#FF5A5F" title="Clic para copiar"><b>Rojo Claro</b><span>#FF5A5F</span></div>
+<div class="swatch reveal" style="--c:#B3141B;--t:#fff" data-hex="#B3141B" title="Clic para copiar"><b>Rojo Oscuro</b><span>#B3141B</span></div>
+</div>
+
+<!-- Mensaje que informa al usuario cuando copia un código de color -->
+<p class="lead reveal" style="margin-top:16px;font-size:14px" id="copied">Haz clic en un color para copiar su código.</p>
+
+<h2 class="pf-title" style="margin-top:72px">Sistema de <span class="rojo-l">marca</span></h2>
+
+<!-- Información sobre los elementos que componen la identidad gráfica -->
+<div class="pf-grid">
+<div class="pf-card reveal">
+<h3>TIPOGRAFÍA</h3>
+<p style="font-size:72px;font-weight:900;color:#fff;line-height:1">Aa</p>
+<p><b>Poppins</b> · Medium para etiquetas y datos, Regular para textos largos.</p>
+</div>
+
+<div class="pf-card reveal">
+<h3>MASCOTA Y SÍMBOLO</h3>
+<p><b>01</b> La O es la mascota: un bloque de un solo ojo, como un píxel.</p>
+<p><b>02</b> La segunda fila se corre de lugar: desorden controlado.</p>
+<p><b>03</b> La boca en zigzag es una grieta de concreto y unos dientes.</p>
+</div>
+
+<div class="pf-card reveal">
+<h3>TONO Y ESTILO</h3>
+<p>Crudo y directo, sin adornos innecesarios.</p>
+<p>Alto contraste: rojo, negro y blanco.</p>
+<p>Bloques pesados y formas rectas, como el concreto del brutalismo.</p>
+<p>Guiños de píxel y videojuego en los detalles.</p>
+</div>
+</div>
+
+<!-- Imagen de referencia visual o moodboard de la identidad KRUDO -->
+<div class="moodboard reveal" style="margin-top:56px">
+<img src="imagenes/tablero_krudo.png" alt="Moodboard KRUDO" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" />
+</div>
+</div>
+</section>
+
+<!-- TÍTULO INTRODUCTORIO DE LA GALERÍA DE PROYECTOS -->
+<section id="trabajos" class="section section--red" style="padding:80px 0">
+<div class="wrap">
+<h2 class="pf-title" style="color:#fff;margin:0">Mis <span style="color:var(--negro)">trabajos</span></h2>
+</div>
+</section>
+
+<!-- PROYECTO 01: póster promocional de Five Nights at Freddy's -->
+<section class="section section--bone" style="padding:80px 0">
+<div class="wrap">
+<article class="project">
+
+<!-- Imagen del proyecto y texto alternativo si no carga -->
+<div class="project__img">
+<img src="imagenes/fnf.png" alt="Póster Five Nights at Freddy's" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" />
+<span class="project__ph">imagenes/fnf.png</span>
+</div>
+
+<!-- Ficha descriptiva con curso, herramientas, tipo y año -->
+<div class="project__body">
+<p class="tag">PROYECTO 01</p>
+<h3>Five Nights at Freddy's</h3>
+<dl class="meta">
+<div><dt>CURSO</dt><dd>Teoría del diseño</dd></div>
+<div><dt>HERRAMIENTAS</dt><dd>Photoshop</dd></div>
+<div><dt>TIPO</dt><dd>Póster promocional</dd></div>
+<div><dt>AÑO</dt><dd>2024</dd></div>
+</dl>
+<p><b>Objetivo y proceso:</b> Diseñar un póster que transmita misterio, esfuerzo y determinación. La escalera representa el recorrido y la figura solitaria el camino que se avanza con perseverancia.</p>
+</div>
+</article>
+</div>
+</section>
+
+<!-- PROYECTO 02: póster El Último Escalón -->
+<section class="section section--dark" style="padding:80px 0">
+<div class="wrap">
+<article class="project project--rev">
+<div class="project__img">
+<img src="imagenes/melancolia.png" alt="Póster El Último Escalón" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" />
+<span class="project__ph">imagenes/melancolia.png</span>
+</div>
+<div class="project__body">
+<p class="tag">PROYECTO 02</p>
+<h3>El Último Escalón</h3>
+<dl class="meta">
+<div><dt>CURSO</dt><dd>Semiótica visual</dd></div>
+<div><dt>HERRAMIENTAS</dt><dd>Photoshop</dd></div>
+<div><dt>TIPO</dt><dd>Póster / Fotomontaje</dd></div>
+<div><dt>AÑO</dt><dd>2024</dd></div>
+</dl>
+<p><b>Objetivo y proceso:</b> Mantuve la figura en sombras para dejar que la atmósfera cuente la historia. Aprendí a manejar los contrastes y a confiar en que el menos es más cuando se busca misterio.</p>
+</div>
+</article>
+</div>
+</section>
+
+<!-- PROYECTO 03: póster Ambar -->
+<section class="section section--bone" style="padding:80px 0">
+<div class="wrap">
+<article class="project">
+<div class="project__img">
+<img src="imagenes/ambar.png" alt="Póster Ambar" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" />
+<span class="project__ph">imagenes/ambar.png</span>
+</div>
+<div class="project__body">
+<p class="tag">PROYECTO 03</p>
+<h3>Ambar</h3>
+<dl class="meta">
+<div><dt>CURSO</dt><dd>Semiótica visual</dd></div>
+<div><dt>HERRAMIENTAS</dt><dd>Photoshop</dd></div>
+<div><dt>TIPO</dt><dd>Póster</dd></div>
+<div><dt>AÑO</dt><dd>2024</dd></div>
+</dl>
+<p><b>Objetivo y proceso:</b> Tonos cálidos y una luz marcada que divide el rostro, para representar la dualidad entre luz y sombra, con letras elegantes que no opacan la imagen.</p>
+</div>
+</article>
+</div>
+</section>
+
+<!-- PROYECTO 04: póster inspirado en Warframe -->
+<section class="section section--dark" style="padding:80px 0">
+<div class="wrap">
+<article class="project project--rev">
+<div class="project__img">
+<img src="imagenes/warframe.png" alt="Póster Warframe" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" />
+<span class="project__ph">imagenes/warframe.png</span>
+</div>
+<div class="project__body">
+<p class="tag">PROYECTO 04</p>
+<h3>Warframe</h3>
+<dl class="meta">
+<div><dt>CURSO</dt><dd>Fuera de clase</dd></div>
+<div><dt>HERRAMIENTAS</dt><dd>Photoshop</dd></div>
+<div><dt>TIPO</dt><dd>Póster</dd></div>
+<div><dt>AÑO</dt><dd>2026</dd></div>
+</dl>
+<p><b>Objetivo y proceso:</b> Integré al personaje con luces neón y líneas digitales para transmitir ciencia ficción. Aprendí a usar capas y modos de fusión para crear profundidad.</p>
+</div>
+</article>
+</div>
+</section>
+
+<!-- PROYECTO 05: póster TINTA -->
+<section class="section section--bone" style="padding:80px 0">
+<div class="wrap">
+<article class="project">
+<div class="project__img">
+<img src="imagenes/tinta.png" alt="Póster TINTA" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" />
+<span class="project__ph">imagenes/tinta.png</span>
+</div>
+<div class="project__body">
+<p class="tag">PROYECTO 05</p>
+<h3>TINTA</h3>
+<dl class="meta">
+<div><dt>CURSO</dt><dd>Fuera de clase</dd></div>
+<div><dt>HERRAMIENTAS</dt><dd>Photoshop</dd></div>
+<div><dt>TIPO</dt><dd>Póster</dd></div>
+<div><dt>AÑO</dt><dd>2026</dd></div>
+</dl>
+<p><b>Objetivo y proceso:</b> Rojo intenso y la palabra TINTA en grande para transmitir fuerza y personalidad. Con pocos elementos bien colocados se logra un mensaje más potente.</p>
+</div>
+</article>
+</div>
+</section>
+
+<!-- PROYECTO 06: afiche de diseño brutalista No Adorno -->
+<section class="section section--dark" style="padding:80px 0">
+<div class="wrap">
+<article class="project project--rev">
+<div class="project__img">
+<img src="imagenes/diseno_brutalista.png" alt="Póster No Adorno" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" />
+<span class="project__ph">imagenes/diseno_brutalista.png</span>
+</div>
+<div class="project__body">
+<p class="tag">PROYECTO 06</p>
+<h3>No Adorno</h3>
+<dl class="meta">
+<div><dt>CURSO</dt><dd>Fuera de clase</dd></div>
+<div><dt>HERRAMIENTAS</dt><dd>Photoshop</dd></div>
+<div><dt>TIPO</dt><dd>Afiche</dd></div>
+<div><dt>AÑO</dt><dd>2026</dd></div>
+</dl>
+<p><b>Objetivo y proceso:</b> La frase NO ADORNO para resaltar lo esencial, con tipografía firme y colores sobrios. Ordenar y simplificar es la mejor forma de comunicar con claridad.</p>
+</div>
+</article>
+</div>
+</section>
+
+<!-- CONTACTO: sección final para facilitar la comunicación con el diseñador -->
+<section class="section section--red cta" id="contacto">
+<div class="wrap">
+<h2 class="cta__title reveal">GRACIAS.</h2>
+<p class="lead lead--light reveal">Lima, Perú · tu-correo@ejemplo.com</p>
+
+<!-- Botones para enviar un correo o volver a la página principal -->
+<div class="hero__cta reveal">
+<a href="mailto:tu-correo@ejemplo.com" class="btn btn--dark">Escríbeme →</a>
+<a href="index.html" class="btn btn--ghost">← Volver al inicio</a>
+</div>
+</div>
+</section>
+
 </main>
-<footer class="footer"><span>STEVEN VARGAS</span><i></i><span>LIMA, PERÚ · 2026</span></footer>
+
+<!-- Pie de página con el nombre del diseñador, ubicación y año -->
+<footer class="footer">
+<span>STEVEN VARGAS</span>
+<i></i>
+<span>LIMA, PERÚ · 2026</span>
+</footer>
+
+<!-- Archivo JavaScript externo: controla las interacciones y animaciones de la página -->
 <script src="script.js"></script>
+
+<!-- Función para copiar al portapapeles el código HEX de cada color de la paleta -->
 <script>
 document.querySelectorAll(".swatch").forEach(s=>s.addEventListener("click",()=>{
   try{navigator.clipboard.writeText(s.dataset.hex)}catch(e){}
   document.getElementById("copied").textContent="Copiado: "+s.dataset.hex;
 }));
 </script>
-</body></html>
 
-
+</body>
+</html>
