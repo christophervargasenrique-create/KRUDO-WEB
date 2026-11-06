@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KRUDO · Steven Vargas — Diseñador Gráfico</title>
+  <meta name="description" content="Diseño gráfico crudo que hace que tu marca se note. Identidad visual, logotipos y contenido para redes. Lima, Perú." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="is-loading">
+
+  <!-- BARRA DE PROGRESO DE SCROLL -->
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <!-- PANTALLA DE CARGA -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__center">
+      <svg class="loader__mascot" viewBox="0 0 100 110">
+        <rect x="22" y="0" width="14" height="22" fill="#0B0A0A" />
+        <rect x="64" y="0" width="14" height="22" fill="#0B0A0A" />
+        <rect x="2" y="14" width="96" height="94" rx="20" fill="#0B0A0A" />
+        <rect x="26" y="34" width="38" height="38" fill="#fff" />
+        <rect class="loader__pupil" x="38" y="46" width="14" height="14" fill="#0B0A0A" />
+        <polyline class="loader__mouth" points="16,92 31,78 45,94 59,78 73,94 86,82" fill="none" stroke="#fff" stroke-width="7" />
+      </svg>
+      <div class="loader__word">
+        <span style="--i:0">K</span><span style="--i:1">R</span><span style="--i:2">U</span><span style="--i:3">D</span><span style="--i:4">O</span>
+      </div>
+      <div class="loader__bar"><i id="loaderBar"></i></div>
+      <div class="loader__meta"><span>CARGANDO // DISEÑO CRUDO</span><span id="loaderPct">000%</span></div>
+    </div>
+  </div>
+  <noscript><style>.loader{display:none}.reveal,.split .wi{opacity:1!important;transform:none!important}body.is-loading{overflow:auto}</style></noscript>
+
+  <!-- SVG de la mascota (se reutiliza con <use>) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="krudo-mascot" viewBox="0 0 100 110">
+      <rect x="22" y="0" width="14" height="22" fill="currentColor" />
+      <rect x="64" y="0" width="14" height="22" fill="currentColor" />
+      <rect x="2" y="14" width="96" height="94" rx="20" fill="currentColor" />
+    </symbol>
+  </svg>
+
+  <!-- TICKER -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <span>PORTAFOLIO 2026 // DISEÑO GRÁFICO // LIMA - PERÚ // KRUDO // </span>
+      <span>PORTAFOLIO 2026 // DISEÑO GRÁFICO // LIMA - PERÚ // KRUDO // </span>
+      <span>PORTAFOLIO 2026 // DISEÑO GRÁFICO // LIMA - PERÚ // KRUDO // </span>
+      <span>PORTAFOLIO 2026 // DISEÑO GRÁFICO // LIMA - PERÚ // KRUDO // </span>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <header class="nav">
+    <a href="#inicio" class="nav__logo" aria-label="KRUDO inicio">
+      <span>KRUDO</span>
+      <svg class="mascot mascot--sm" viewBox="0 0 100 110" aria-hidden="true">
+        <use href="#krudo-mascot" style="color:var(--rojo)" />
+        <rect x="30" y="38" width="30" height="30" fill="#fff" />
+        <rect x="40" y="48" width="12" height="12" fill="#0B0A0A" />
+        <polyline points="18,88 32,76 44,90 56,76 70,90 82,80" fill="none" stroke="#fff" stroke-width="6" />
+      </svg>
+    </a>
+    <nav class="nav__links" aria-label="Principal">
+      <a href="#problema">Problema</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#historia">Mi historia</a>
+      <a href="portafolio.html">Portafolio</a>
+      <a href="#contacto" class="btn btn--sm">Hablemos</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+
+    <!-- ============ 1. HERO ============ -->
+    <section class="hero section--red">
+      <div class="wrap hero__grid">
+        <div class="hero__text reveal">
+          <p class="eyebrow eyebrow--light">STEVEN VARGAS · DISEÑADOR GRÁFICO · LIMA</p>
+          <h1>
+            Diseño <span class="ink">crudo</span><br />
+            que hace que tu marca <span class="outline">se note.</span>
+          </h1>
+          <p class="hero__sub">
+            Creo identidad visual, logotipos y contenido para redes, sin adornos innecesarios,
+            con una idea clara detrás de cada pieza.
+          </p>
+          <div class="hero__cta">
+            <a href="#contacto" class="btn btn--dark">Hablemos de tu proyecto →</a>
+            <a href="portafolio.html" class="btn btn--ghost">Ver portafolio</a>
+          </div>
+        </div>
+
+        <div class="hero__mascot reveal" aria-hidden="true">
+          <div class="hero__big">KR<br />UD</div>
+          <svg class="mascot mascot--xl" id="mascot" viewBox="0 0 100 110">
+            <use href="#krudo-mascot" style="color:#0B0A0A" />
+            <rect x="26" y="34" width="38" height="38" fill="#fff" />
+            <rect id="pupil" x="38" y="46" width="14" height="14" fill="#0B0A0A" />
+            <polyline points="16,92 31,78 45,94 59,78 73,94 86,82" fill="none" stroke="#fff" stroke-width="7" />
+          </svg>
+        </div>
+      </div>
+      <div class="pill-num">01</div>
+    </section>
+
+    <!-- ============ 2. PROBLEMA / GUÍA ============ -->
+    <section id="problema" class="section section--dark">
+      <div class="wrap">
+        <p class="eyebrow">02 · EL PROBLEMA</p>
+        <h2 class="reveal">¿Tu marca <span class="rojo">no logra conectar?</span></h2>
+        <p class="lead reveal">
+          Sé lo frustrante que es tener un buen producto o una buena idea y que nadie la note.
+          Logos que se parecen a todos, redes sin identidad, piezas que no dicen nada.
+          Como diseñador gráfico, te ayudo a transformar esa idea en una imagen clara,
+          memorable y con personalidad.
+        </p>
+
+        <div class="cards">
+          <article class="card reveal">
+            <span class="card__n">01</span>
+            <h3>Identidad que se reconoce</h3>
+            <p>Logotipo, paleta y tipografía que trabajan juntos, para que te reconozcan a la primera.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card__n">02</span>
+            <h3>Contenido con intención</h3>
+            <p>Piezas para redes sociales con estilo propio, no plantillas que ya vio todo el mundo.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card__n">03</span>
+            <h3>Mensajes que se entienden</h3>
+            <p>Ordeno y simplifico: pocos elementos, bien colocados, un mensaje potente.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. PLAN / PROYECTOS ============ -->
+    <section id="proyectos" class="section section--bone">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--dark">03 · EL PLAN — PRUEBAS</p>
+        <h2 class="reveal ink-title">Proyectos <span class="rojo-d">destacados</span></h2>
+        <p class="lead lead--dark reveal">Tres piezas donde el contraste, la tipografía y la composición hacen el trabajo.</p>
+
+        <div class="projects">
+          <!-- Proyecto 1 -->
+          <article class="project reveal">
+            <div class="project__img">
+              <img src="imagenes/warframe.png" alt="Póster Warframe — Future // Unbound" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" />
+              <span class="project__ph">imagenes/warframe.png</span>
+            </div>
+            <div class="project__body">
+              <p class="tag">PROYECTO 01 · PÓSTER · 2026</p>
+              <h3>Warframe</h3>
+              <p><b>Reto:</b> mezclar luces neón y líneas digitales sin sobrecargar la composición.</p>
+              <p><b>Resultado:</b> un estilo cinematográfico de ciencia ficción con profundidad, usando capas y modos de fusión.</p>
+              <p class="tools">Photoshop</p>
+            </div>
+          </article>
+
+          <!-- Proyecto 2 -->
+          <article class="project project--rev reveal">
+            <div class="project__img">
+              <img src="imagenes/tinta.png" alt="Póster TINTA — No es un color. Es una postura." loading="lazy" onerror="this.parentElement.classList.add('is-empty')" />
+              <span class="project__ph">imagenes/tinta.png</span>
+            </div>
+            <div class="project__body">
+              <p class="tag">PROYECTO 02 · PÓSTER · 2026</p>
+              <h3>TINTA</h3>
+              <p><b>Reto:</b> integrar imagen y texto sin que se tapen, con un rojo intenso que no canse la vista.</p>
+              <p><b>Resultado:</b> una palabra enorme, una frase que da sentido y fuerza visual con pocos elementos.</p>
+              <p class="tools">Photoshop</p>
+            </div>
+          </article>
+
+          <!-- Proyecto 3 -->
+          <article class="project reveal">
+            <div class="project__img">
+              <img src="imagenes/diseno_brutalista.png" alt="Afiche No Adorno — estructura cruda" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" />
+              <span class="project__ph">imagenes/diseno_brutalista.png</span>
+            </div>
+            <div class="project__body">
+              <p class="tag">PROYECTO 03 · AFICHE · 2026</p>
+              <h3>No Adorno</h3>
+              <p><b>Reto:</b> organizar recuadros y etiquetas sin perder fuerza visual.</p>
+              <p><b>Resultado:</b> un afiche brutalista, firme y sobrio, donde ordenar es la mejor forma de comunicar.</p>
+              <p class="tools">Photoshop</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Testimonio (reemplaza con uno real) -->
+        <blockquote class="quote reveal">
+          <p>“[Pon aquí un testimonio real de un profesor, compañero o cliente: qué problema tenía y cómo lo resolviste.]”</p>
+          <cite>— [Nombre], [Curso / Cliente]</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ============ 4. HISTORIA / ABOUT ============ -->
+    <section id="historia" class="section section--dark">
+      <div class="wrap about">
+        <div class="about__photo reveal">
+          <img src="imagenes/steven.jpg" alt="Steven Vargas, diseñador gráfico" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" />
+          <span class="project__ph">imagenes/steven.jpg</span>
+        </div>
+
+        <div class="about__text">
+          <p class="eyebrow">04 · MI HISTORIA</p>
+          <h2 class="reveal">¡Hola! Me llamo <span class="rojo-l">Steven.</span></h2>
+          <p class="lead reveal">
+            Empecé diseñando por curiosidad y me quedé por obsesión. En 2024 entré a estudiar
+            Arte &amp; Diseño Gráfico Empresarial y entendí que diseñar no es decorar:
+            es comunicar con claridad. Desde entonces transformo ideas en identidad visual,
+            logotipos y contenido para redes, y me adapto a cada reto.
+          </p>
+
+          <ol class="timeline">
+            <li><b>2024</b> Taller de Xilografía · Museo de los Descalzos, Rímac.</li>
+            <li><b>2024</b> Expuesto en SEV Los Olivos · conferencia de diseño y creatividad.</li>
+            <li><b>2024</b> Diseñador freelance · identidad visual, logotipos y redes en Lima.</li>
+            <li><b>Hoy</b> Arte &amp; Diseño Gráfico · Universidad César Vallejo.</li>
+          </ol>
+
+          <div class="skills reveal">
+            <div class="skill"><span>Photoshop</span><i style="--v:85%"></i></div>
+            <div class="skill"><span>Illustrator</span><i style="--v:80%"></i></div>
+            <div class="skill"><span>InDesign</span><i style="--v:60%"></i></div>
+            <div class="skill"><span>Premiere Pro</span><i style="--v:50%"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. CTA FINAL ============ -->
+    <section id="contacto" class="section section--red cta">
+      <div class="wrap">
+        <h2 class="cta__title reveal">HABLEMOS.</h2>
+        <p class="lead lead--light reveal">
+          Cuéntame qué necesita tu marca. Te respondo con ideas claras, no con adornos.
+        </p>
+        <div class="hero__cta reveal">
+          <a href="mailto:tu-correo@ejemplo.com" class="btn btn--dark">Escríbeme → tu-correo@ejemplo.com</a>
+          <a href="portafolio.html" class="btn btn--ghost">Portafolio</a>
+        </div>
+      </div>
+      <div class="pill-num">05</div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>STEVEN VARGAS</span>
+    <i></i>
+    <span>LIMA, PERÚ · 2026</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
